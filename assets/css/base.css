@@ -1,0 +1,46 @@
+:root {
+    --background-dark-green: #3b6978;
+    --background-light-green: #84a9ac;
+    --color-text: #F7F7F7;                                                
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-buttons {
+    justify-content: flex-start;
+    gap: 5rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.button {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 2px solid var(--background-light-green);
+    border-radius: 1.8rem;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.button-light {
+    background: var(--background-light-green); 
+}
