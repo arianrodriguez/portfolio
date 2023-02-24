@@ -42,19 +42,33 @@
         justify-content: flex-end;
     }
 
-    .navbar__list {
-        display: none;
+    .navbar__list { /* el navbar se oculta */
+        position: fixed;
+        top: -100%;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        height: 100vh;
+        background: var(--background-light-green);
+        transition: 2.5s;
     }
 
-    .navbar__list-active {
-        display: inherit;
+    .navbar__list-active { /* el navbar se muestra */
+        position: fixed;
+        top: 0;
+        left: 0;
         flex-direction: column;
-        width: 100%;
+        justify-content: center;
+        width: 85%;
+        height: 100vh;
         background: var(--background-light-green);
+        transition: 1s;
     }
 
     .navbar__list-item {
         padding: 1rem 0;
+        font-size: 2.5rem;
     }
 
     .navbar__content-toggle {
