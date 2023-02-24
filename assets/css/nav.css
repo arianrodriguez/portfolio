@@ -8,13 +8,14 @@
 }
 
 .navbar__list {
-    gap: 1.5rem;                                                                                      
+    gap: 1.5rem;             
 }
 
 .navbar__list-item {
     font-size: 1.5rem;
     font-weight: 200;
     color: var(--color-text);  
+
 }
 
 .navbar__list-item a:hover {
@@ -22,8 +23,42 @@
     color: rgba(0,0,0,.575);
 }
 
+.navbar__content-toggle {
+    display: none;
+    margin-left: auto;
+    font-size: 2rem;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.navbar__list-active {
+    gap: 1.5rem; /* posible error al dejar el toggle abierto y pasar a desktop*/
+}
+
 @media screen and (max-width: 785px) {
     .navbar__content {
+        padding: 0 0 1.5rem 0;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .navbar__list {
         display: none;
+    }
+
+    .navbar__list-active {
+        display: inherit;
+        flex-direction: column;
+        width: 100%;
+        background: var(--background-light-green);
+    }
+
+    .navbar__list-item {
+        padding: 1rem 0;
+    }
+
+    .navbar__content-toggle {
+        display: inherit;
+        margin: 2.5rem;
     }
 }

@@ -19,6 +19,7 @@
     
     <nav class="navbar">
         <div class="navbar__content flex-center">
+
             <ul class="navbar__list flex-center">
                 <li class="navbar__list-item"><a href="#">Inicio</a></li>
                 <li class="navbar__list-item"><a href="#">Sobre mi</a></li>
@@ -27,7 +28,15 @@
                 <li class="navbar__list-item"><a href="#">Proyectos</a></li>
                 <li class="navbar__list-item"><a href="#">Contacto</a></li>
             </ul>
+
+            <div class="navbar__content-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+
         </div>
+
+        
+
     </nav>
 
     <header class="header flex-column">
@@ -56,17 +65,18 @@
                 <h1 class="title">Arian Rodriguez</h1>
                 <p>Estudiante de Ingeniería en Software enfocado al Desarrollo Web Front-End. Como persona autodidacta, busco poder realizar prácticas que sean de ayuda a mi crecimiento profesional</p>
                 <div class="box-buttons flex-center">
-                    <div class="button" id="button-cv">Curriculum</div>
-                    <div class="button button-light" id="button-contact">Contacto</div>
+                    <div class="button box-shadow" id="button-cv">Curriculum</div>
+                    <div class="button button-light box-shadow" id="button-contact">Contacto</div>
                 </div>
             </div>
             <div class="header__content-img">
-                <img src="/assets/img/picture_arian.png" alt="Fotografía Arian">
+                <img src="/assets/img/picture_arian.png" alt="Fotografía Arian" class="box-shadow">
             </div>        
         </div>
     </header>
 
     <script src="/components/animation-buttons.js"></script>
+    <script src="/components/menu-toggle.js"></script>
 
 </body>
 </html>
