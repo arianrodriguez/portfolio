@@ -19,7 +19,11 @@
 }
 
 .navbar__list-item a:hover {
-    transition: .5s;
+    transition: .3s;
+    color: rgba(0,0,0,.575);
+}
+
+.item-active {
     color: rgba(0,0,0,.575);
 }
 
@@ -68,11 +72,31 @@
 
     .navbar__list-item {
         padding: 1rem 0;
-        font-size: 2.5rem;
+        font-size: 2.5rem; 
     }
 
     .navbar__content-toggle {
         display: inherit;
         margin: 2.5rem;
+    }
+}
+
+/* bug del ícono X del navbar */
+
+@media screen and (max-width: 642px) {
+    .navbar__list, .navbar__list-active {
+        width: 100%;
+    }
+
+    .fa-times {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 242px) {
+    .navbar__list-item {
+        font-size: 1.8rem;
     }
 }
