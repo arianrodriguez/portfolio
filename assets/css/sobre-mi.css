@@ -1,0 +1,22 @@
+.sobreMi__content {
+    color: var(--color-text-dark);
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.sobreMi__content .subtitle {
+    padding-bottom: 2rem;
+}
+
+.sobreMi__content p {
+    font-size: 1.5rem;
+    padding: 0 3rem 4rem;
+}
+
+@media screen and (max-width: 370px) {
+    .sobreMi__content p {
+        font-size: 1rem;
+    }
+}

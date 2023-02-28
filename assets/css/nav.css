@@ -8,14 +8,14 @@
 }
 
 .navbar__list {
-    gap: 1.5rem;             
+    gap: 1.5rem;   
+    z-index: 1;          
 }
 
 .navbar__list-item {
     font-size: 1.5rem;
     font-weight: 200;
     color: var(--color-text);  
-
 }
 
 .navbar__list-item a:hover {
@@ -37,6 +37,7 @@
 
 .navbar__list-active {
     gap: 1.5rem; /* posible error al dejar el toggle abierto y pasar a desktop*/
+    z-index: 1;
 }
 
 @media screen and (max-width: 785px) {
@@ -78,6 +79,7 @@
     .navbar__content-toggle {
         display: inherit;
         margin: 2.5rem;
+        z-index: 2;
     }
 }
 

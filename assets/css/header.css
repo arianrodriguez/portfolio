@@ -53,6 +53,7 @@
 .wave {
     background-image: url(../img/wave.png);
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -83,8 +84,13 @@
         gap: 1rem;
     }
 
+    .header__content-links {
+        margin-bottom: 8rem;
+    }
+
     .wave {
-        display: none;
+        background-size: contain;
+        background-position-y: bottom;
     }
 }
 
