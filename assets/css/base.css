@@ -50,3 +50,27 @@ body {
 .box-shadow {
     box-shadow: 1px 1px 20px rgba(0,0,0,.5);
 }
+
+.wave {
+    background-image: url(../img/wave.svg);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.wave-inverted {
+    transform: rotateX(180deg);
+    top: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .wave {
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+    }
+    .wave-inverted {
+        background-position-y: top;
+    }
+}

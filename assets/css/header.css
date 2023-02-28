@@ -50,16 +50,6 @@
     color: rgba(0,0,0,.7);
 }
 
-.wave {
-    background-image: url(../img/wave.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 130px;
-}
-
 @media screen and (max-width: 1150px) {
     .header {
         display: block;
@@ -86,11 +76,6 @@
 
     .header__content-links {
         margin-bottom: 8rem;
-    }
-
-    .wave {
-        background-size: contain;
-        background-position-y: bottom;
     }
 }
 

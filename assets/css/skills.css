@@ -1,0 +1,22 @@
+#skills {
+    background: var(--background-dark-green);
+    color: var(--color-text);
+    position: relative;
+}
+
+.skills__content {
+    padding-top: 10rem;
+}
+
+.skills__content .subtitle {
+    text-align: center;
+}
+
+.skills__content-languages {
+
+}
+
+.skills__item img {
+    width: 100px;
+}
+
