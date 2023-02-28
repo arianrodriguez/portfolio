@@ -1,6 +1,6 @@
 :root {
     --background-dark-green: #3b6978;
-    --background-light-green: #84a9ac;
+    --background-light-green: #72AAAE;
     --color-text: #F7F7F7;                                                
 }
 
@@ -12,6 +12,7 @@ body {
     font-family: 'Tw Cen MT Condensed', sans-serif;
     font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
     font-family: 'Tw Cen MT', sans-serif;
+    background: var(--background-light-green);
 }
 
 .flex-center {
