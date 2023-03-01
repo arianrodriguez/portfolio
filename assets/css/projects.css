@@ -1,0 +1,49 @@
+#projects {
+    position: relative;
+    background: var(--background-dark-green);
+    padding-top: 8rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.projects__content .cards__content {
+    padding: 2rem;
+}
+
+.projects__content .cards__item {
+    width: 300px;
+    height: auto;
+    background: var(--color-text-dark);
+}
+
+.projects__content .cards__item-img {
+    height: 50%;
+}
+
+.projects__content .cards__item img {
+    width: 100%;
+    max-height: initial;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all .3s;
+}
+
+.project-info span {
+    font-size: 1.25rem;
+}
+
+.project-info p {
+    padding-top: .5rem;
+}
+
+.projects__content .box-buttons {
+    justify-content: center;
+    gap: .5rem;
+    font-size: .8rem;
+    padding-top: 1rem;
+}
+
+.projects__content .button {
+    padding: 1rem 2.5rem;
+}
