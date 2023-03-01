@@ -1,0 +1,31 @@
+.cards__content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cards__item {
+    background: var(--background-light-green);
+    border-radius: 30px;
+    opacity: .8;
+    transition: .3s;
+}
+
+.cards__item:hover {
+    opacity: initial;
+}
+
+.cards__item-content {
+    padding: 2rem;
+}
+
+.cards__item img {
+    width: 100px;
+    max-height: 100px;
+}
+
+@media screen and (max-width: 370px) {
+    .cards__item img {
+        width: 75px;
+    }
+}

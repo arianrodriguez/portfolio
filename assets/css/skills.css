@@ -12,34 +12,9 @@
     text-align: center;
 }
 
-.skills__content-languages {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.skills__item {
-    background: var(--background-light-green);
-    border-radius: 30px;
-    opacity: .8;
-}
-
-.skills__item:hover {
-    opacity: initial;
-}
-
-.skills__item-content {
-    padding: 2rem;
-}
-
 .skills__content-grid {
     gap: 2rem;
     padding: 2rem;
-}
-
-.skills__item img {
-    width: 100px;
-    max-height: 100px;
 }
 
 .progressbar-language {
@@ -53,6 +28,7 @@
     height: .6rem;
     background: var(--color-text-dark);
     border-radius: 20px;
+    transition: .3s;
 }
 
 .fill-progressbar {
@@ -62,15 +38,9 @@
     height: .6rem;
     background: #F55050;
     border-radius: 10px;
-    width: 20%;
+    width: 30%;
 }
 
 .progressbar:hover {
     transform: scale(1.05);
-}
-
-@media screen and (max-width: 370px) {
-    .skills__item img {
-        width: 75px;
-    }
 }
