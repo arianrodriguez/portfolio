@@ -24,11 +24,11 @@
 
             <ul class="navbar__list flex-center">
                 <li class="navbar__list-item item-active"><a href="#inicio">Inicio</a></li>
-                <li class="navbar__list-item"><a href="#">Sobre mi</a></li>
-                <li class="navbar__list-item"><a href="#">Habilidades</a></li>
-                <li class="navbar__list-item"><a href="#">Formación</a></li>
-                <li class="navbar__list-item"><a href="#">Proyectos</a></li>
-                <li class="navbar__list-item"><a href="#">Contacto</a></li>
+                <li class="navbar__list-item"><a href="#sobreMi">Sobre mi</a></li>
+                <li class="navbar__list-item"><a href="#skills">Habilidades</a></li>
+                <li class="navbar__list-item"><a href="#formation">Formación</a></li>
+                <li class="navbar__list-item"><a href="#projects">Proyectos</a></li>
+                <li class="navbar__list-item"><a href="#contact">Contacto</a></li>
             </ul>
 
             <div class="navbar__content-toggle">
@@ -81,7 +81,7 @@
     <section id="sobreMi">
         <div class="sobreMi__content">
             <h2 class="subtitle">Sobre mi</h2>
-            <p>Soy actualmente estudiante de la carrera de Ingeniería en Software, la cual me encuentro continuamente mejorando mi lógica de programación. Además, mejoro internamente mis habilidades blandas como lo son, el liderazgo, compañerismo, asertividad.
+            <p>Actualmente estudiante de la carrera de Ingeniería en Software, la cual me encuentro continuamente mejorando mi lógica de programación con C++. Además, mejoro internamente mis habilidades blandas como lo son, el liderazgo, compañerismo y asertividad.
             En adición a mi educación profesional, soy alumno del programa asíncrono Oracle Next Education + Alura LATAM, donde me encuentro aprendiendo los fundamentos del desarrollo web Front-End. Asimismo, estoy aprendiendo de manera independiente el lenguaje de Python.</p>
         </div>
     </section>
@@ -89,39 +89,84 @@
     <section id="skills">
         <div class="skills__content">
             <div class="wave wave-inverted"></div>
+
             <h2 class="subtitle">Habilidades</h2>
-            <div class="skills__content-languages flex-center">
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/html-5-logo-svgrepo-com.svg" alt="HTML5" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
+
+            <div class="skills__content-grid flex-column">
+
+                <div class="skills__content-languages flex-center">
+                    <div class="skills__item flex-column">
+                        <div class="skills__item-content">
+                            <img src="/assets/img/html-5-logo-svgrepo-com.svg" alt="HTML5" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="skills__item flex-column">
+                        <div class="skills__item-content">
+                            <img src="/assets/img/css-3-svgrepo-com.svg" alt="CSS3" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item flex-column">
+                        <div class="skills__item-content">
+                            <img src="/assets/img/javascript-svgrepo-com.svg" alt="JavaScript" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/css-3-svgrepo-com.svg" alt="CSS3" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
+
+                <div class="skills__content-languages flex-center">
+                    <div class="skills__item flex-column">
+                        <div class="skills__item-content">
+                            <img src="/assets/img/python-svgrepo-com.svg" alt="Python" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__item flex-column">
+                        <div class="skills__item-content">                     
+                            <img src="/assets/img/cpp-svg.svg" alt="C++" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>                   
+                        </div>
+                    </div>
+                    <div class="skills__item flex-column">        
+                        <div class="skills__item-content">             
+                            <img src="/assets/img/git-svgrepo-com.svg" alt="Git" class="skills__item-logo">
+                            <div class="progressbar-language flex-center">
+                                <span class="progressbar">
+                                    <span class="fill-progressbar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/javascript-svgrepo-com.svg" alt="JavaScript" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
-                </div>
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/python-svgrepo-com.svg" alt="Python" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
-                </div>
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/cpp-svg.svg" alt="C++" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
-                </div>
-                <div class="skills__item flex-column">
-                    <img src="/assets/img/git-svgrepo-com.svg" alt="Git" class="skills__item-logo">
-                    <div class="progressbar-language"></div>
-                </div>
+
+            
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <script src="/components/animation-buttons.js"></script>
-    <script src="/components/menu-toggle.js"></script>
-
-</body>
+        
+        <script src="/components/animation-buttons.js"></script>
+        <script src="/components/menu-toggle.js"></script>
+        
+    </body>
 </html>
