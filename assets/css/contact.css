@@ -1,0 +1,98 @@
+#contact {
+    color: var(--color-text-dark);
+    padding: 5rem 0;
+}
+
+.contact__content {
+    text-align: center;
+}
+
+.form__info {
+    padding: 1rem;
+}
+
+.form__info legend {
+    font-size: 2rem;
+}
+
+.form__info legend + p {
+    font-size: 1.5rem;
+}
+
+.form__input {
+    padding: 2rem 0;
+}
+
+.form__input-content { /*chequear estiramiento*/
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.form__input .cards__item {
+    background: var(--color-text-dark);
+    color: var(--color-text);
+}
+
+.input__container {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.input__container input {
+    width: 100%;
+    padding-top: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--background-light-green);
+    outline: none;
+    color: var(--color-text);
+    font-size: 1rem;    
+}
+
+.input__container textarea {
+    padding: 1rem 1.2rem;
+    background: transparent;
+    border: 2px solid var(--background-light-green);
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    resize: none;
+}
+
+.form__label {
+    position: absolute;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+
+    /* buscar el input que está en su focus, y buscar a su hno label */
+.input__container input:focus + .form__label {
+    transform: translateY(-1.15rem);
+    font-size: 1.3rem;
+}
+    /* los inputs que no tengan placeholder (ya está completo), buscar al label y mantenerlo arriba*/
+.input__container input:not(:placeholder-shown)+.form__label {
+    transform: translateY(-1.15rem);
+    font-size: 1.3rem;
+}
+
+
+.form__input-content .box-buttons {
+    justify-content: center;
+}
+
+.form__input-content div:last-of-type {
+    justify-content: center;
+
+}
+
+.form__input-content .button {
+    color: var(--color-text);
+    font-size: 1.6rem;
+    width: 60%;
+}
+
+.form__input-content .button:hover {
+    opacity: .8;
+}
