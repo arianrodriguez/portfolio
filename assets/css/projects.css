@@ -46,4 +46,5 @@
 
 .projects__content .button {
     padding: 1rem 2.5rem;
+    gap: .5rem;
 }
