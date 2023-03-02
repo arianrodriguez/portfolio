@@ -285,19 +285,19 @@
                                         <div class="input__container flex-column">
 
                                             <input type="text" id="form-name" required placeholder=" " data-type="name" autocomplete="off">
-                                            <label for="form-name" class="form__label">Nombre</label>
+                                            <label for="form-name" class="form__label">Nombre *</label>
                                         </div>
 
                                         <div class="input__container flex-column">
                                             
-                                            <input type="text" id="form-email" required placeholder=" " data-type="email" autocomplete="off">
-                                            <label for="form-email" class="form__label">Email</label>
+                                            <input type="text" id="form-email" required placeholder=" " data-type="email" autocomplete="off" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/">
+                                            <label for="form-email" class="form__label">Email *</label>
                                         </div>
 
                                         <div class="input__container flex-column">
                                             
                                             <input type="text" id="form-subject" required placeholder=" " data-type="subject" autocomplete="off">
-                                            <label for="form-subject" class="form__label">Asunto</label>
+                                            <label for="form-subject" class="form__label">Asunto *</label>
                                         </div>
 
                                         <div class="input__container flex-column">
@@ -306,7 +306,7 @@
                                         </div>
 
                                         <div class="flex-center">
-                                            <button type="submit" class="button button-light box-shadow">Enviar</button>
+                                            <button type="submit" class="button button-light box-shadow" id="submit">Enviar</button>
                                         </div>
 
                                     </div>
@@ -327,6 +327,7 @@
     <script src="/components/animation-buttons.js"></script>
     <script src="/components/menu-toggle.js"></script>
     <script src="/components/animation-projects.js"></script>
+    <script src="/components/validation-form.js"></script>
         
     </body>
 </html>

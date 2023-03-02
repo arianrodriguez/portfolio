@@ -41,6 +41,7 @@
 .input__container input {
     width: 100%;
     padding-top: 1rem;
+    margin-bottom: .5rem;
     background: transparent;
     border: none;
     border-bottom: 2px solid var(--background-light-green);
@@ -64,6 +65,7 @@
     position: absolute;
     font-size: 1.5rem;
     transition: all .5s;
+    top: 1.5rem;
 }
 
     /* buscar el input que está en su focus, y buscar a su hno label */
@@ -99,4 +101,13 @@
 
 .form__input-content .button:hover {
     opacity: .8;
+}
+
+.input__error {
+    color: var(--color-red);
+    width: max-content;
+}
+
+.input__error span {
+    padding: 0 .5rem;
 }

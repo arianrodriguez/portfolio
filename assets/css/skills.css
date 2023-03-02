@@ -36,7 +36,7 @@
     top: 0;
     left: 0;
     height: .6rem;
-    background: #F55050;
+    background: var(--color-red);
     border-radius: 10px;
     width: 30%;
 }

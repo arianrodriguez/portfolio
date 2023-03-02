@@ -2,7 +2,8 @@
     --background-dark-green: #3b6978;
     --background-light-green: #72AAAE;
     --color-text: #F7F7F7;     
-    --color-text-dark: #181823cc;                              
+    --color-text-dark: #181823cc; 
+    --color-red: #F55050;                             
 }
 
 * {
