@@ -62,8 +62,8 @@
                 <h1 class="title">Arian Rodriguez</h1>
                 <p>Estudiante de Ingeniería en Software enfocado al Desarrollo Web Front-End. Como persona autodidacta, busco poder realizar prácticas que sean de ayuda a mi crecimiento profesional</p>
                 <div class="box-buttons flex-center">
-                    <div class="button box-shadow" id="button-cv"><a href="https://drive.google.com/file/d/1HznJPnFa53yveJleuDKj4TddCu6KHykt/view?usp=sharing" target="_blank">Curriculum</a></div>
-                    <div class="button button-light box-shadow" id="button-contact">Contacto</div>
+                    <div class="button box-shadow" id="button-cv" data-btn="cv">Curriculum</div>
+                    <div class="button button-light box-shadow" id="button-contact"><a href="#contact">Contacto</a></div>
                 </div>
             </div>
             <div class="header__content-img">
@@ -209,13 +209,13 @@
                             </div>
                             
                             <div class="box-buttons flex-center">
-                                <div class="button flex-center">
+                                <div class="button flex-center" data-btn="psw_demo">
                                     <i class="fa-solid fa-eye"></i>
-                                    <a href="https://arianrodriguez.github.io/password-generator/" target="_blank">Demo</a>
+                                    <p>Demo</p>
                                 </div>
-                                <div class="button flex-center button-light">
+                                <div class="button flex-center button-light" data-btn="psw_gh">
                                     <i class="fa-brands fa-github"></i>
-                                    <a href="https://github.com/arianrodriguez/password-generator" target="_blank">Repo</a>
+                                    <p>Repo</p>
                                 </div>
                             </div>
                         </div>
@@ -233,13 +233,13 @@
                             </div>
                             
                             <div class="box-buttons flex-center">
-                                <div class="button flex-center">
+                                <div class="button flex-center" data-btn="encryp_demo">
                                     <i class="fa-solid fa-eye"></i>
-                                    <a href="https://arianrodriguez.github.io/encrypting-text/" target="_blank">Demo</a>
+                                    <p>Demo</p>
                                 </div>
-                                <div class="button flex-center button-light">
+                                <div class="button flex-center button-light" data-btn="encryp_gh">
                                     <i class="fa-brands fa-github"></i>
-                                    <a href="https://github.com/arianrodriguez/encrypting-text" target="_blank">Repo</a>
+                                    <p>Repo</p>
                                 </div>
                             </div>
                         </div>
@@ -257,13 +257,13 @@
                             </div>
                             
                             <div class="box-buttons flex-center">
-                                <div class="button flex-center">
+                                <div class="button flex-center" data-btn="ss_demo">
                                     <i class="fa-solid fa-eye"></i>
-                                    <a href="" target="_blank">Demo</a>
+                                    <p>Demo</p>
                                 </div>
-                                <div class="button flex-center button-light">
+                                <div class="button flex-center button-light" data-btn="ss_gh">
                                     <i class="fa-brands fa-github"></i>
-                                    <a href="https://github.com/arianrodriguez/staysafe" target="_blank">Repo</a>
+                                    <p>Repo</p>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +315,7 @@
                                         </div>
 
                                         <div class="flex-center" id="button-submit">
-                                            <button type="submit" class="button button-light box-shadow flex-center" id="submit">Enviar</button>
+                                            <button type="submit" class="button button-light box-shadow flex-center" id="submit" data-btn="submit">Enviar</button>
                                         </div>
 
                                     </div>
@@ -371,6 +371,7 @@
     <script src="/components/menu-toggle.js"></script>
     <script src="/components/animation-projects.js"></script>
     <script src="/components/validation-form.js"></script>
+    <script src="/components/buttons-links.js"></script>
         
     </body>
 </html>
