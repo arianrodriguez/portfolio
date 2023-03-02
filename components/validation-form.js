@@ -48,6 +48,9 @@ function input_error(error, input) {
     else
         input_container.appendChild(div);
 
+    // borde rojo en el input
+    input_container.firstElementChild.style.cssText = 'border-bottom: 2px solid var(--color-red)';
+
 }
 
 inputs.forEach((input) => {
@@ -61,6 +64,8 @@ inputs.forEach((input) => {
                 console.log(validity);
                 const div_error = input.parentElement.lastChild;
                 input.parentElement.removeChild(div_error);
+                // regresar al color original
+                input.parentElement.firstElementChild.style.cssText = 'border-bottom: 2px solid var(--background-light-green)';
             }
         }
     });
