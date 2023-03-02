@@ -77,6 +77,10 @@
     font-size: 1.3rem;
 }
 
+.input__container textarea::placeholder {
+    color: var(--color-text);
+}
+
 
 .form__input-content .box-buttons {
     justify-content: center;

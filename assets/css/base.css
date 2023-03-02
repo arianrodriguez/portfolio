@@ -13,6 +13,9 @@
 }
 
 body {
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    font-family: 'Tw Cen MT', sans-serif;
     background: var(--background-light-green);
 }
 
