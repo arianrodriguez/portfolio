@@ -27,7 +27,9 @@ function input_error(error, input) {
 </div>`;
 */
     const div = document.createElement('div');
-    div.classList.add('input__error');
+    div.classList.add('input__error', 'flex-center');
+    const div_content = document.createElement('div');
+    div.appendChild(div_content);
 
     const icon = document.createElement('i');
     icon.classList.add('fa-solid', 'fa-circle-info');
@@ -35,8 +37,8 @@ function input_error(error, input) {
     const span = document.createElement('span');
     span.textContent = error;
 
-    div.appendChild(icon);
-    div.appendChild(span);
+    div_content.appendChild(icon);
+    div_content.appendChild(span);
 
     // reconociendo el padre del input en el que se encuentra (input__container)
     const input_container = input.parentElement;

@@ -24,8 +24,8 @@
 }
 
 .form__input-content { /*chequear estiramiento*/
-    min-width: 50%;
-    max-width: 50%;
+    width: 80%;
+    max-width: 600px;
 }
 
 .form__input .cards__item {
@@ -51,6 +51,7 @@
 }
 
 .input__container textarea {
+    width: 100%;
     padding: 1rem 1.2rem;
     background: transparent;
     border: 2px solid var(--background-light-green);
@@ -88,15 +89,15 @@
     justify-content: center;
 }
 
-.form__input-content div:last-of-type {
+#button-submit {
     justify-content: center;
-
 }
 
 .form__input-content .button {
     color: var(--color-text);
     font-size: 1.6rem;
     width: 60%;
+    justify-content: center;
 }
 
 .form__input-content .button:hover {
@@ -105,9 +106,28 @@
 
 .input__error {
     color: var(--color-red);
-    width: max-content;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .input__error span {
     padding: 0 .5rem;
+}
+
+@media screen and (max-width: 430px) {
+
+}
+
+@media screen and (max-width: 375px) {
+    .form__input-content .button, .input__container textarea::placeholder, .input__container textarea {
+        font-size: 1rem;
+    }
+    .form__label {
+        font-size: 1rem;
+        top: 2rem;
+    }
+
+    .input__container input:not(:placeholder-shown)+.form__label, .input__container input:focus + .form__label, .input__error {
+        font-size: .8rem;
+    }
 }
