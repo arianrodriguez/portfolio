@@ -1,5 +1,14 @@
 .navbar {
     background: var(--background-dark-green);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.down {
+    opacity: .8;
 }
 
 .navbar__content {
@@ -42,7 +51,7 @@
 
 @media screen and (max-width: 785px) {
     .navbar__content {
-        padding: 0 0 1.5rem 0;
+        padding: 0;
         align-items: flex-start;
         justify-content: flex-end;
     }
@@ -78,7 +87,7 @@
 
     .navbar__content-toggle {
         display: inherit;
-        margin: 2.5rem;
+        margin: 1.5rem;
         z-index: 2;
     }
 }
@@ -92,8 +101,8 @@
 
     .fa-times {
         position: absolute;
-        top: 5%;
-        right: 10%;
+        top: 1.5rem;
+        right: 1.8rem;
     }
 }
 

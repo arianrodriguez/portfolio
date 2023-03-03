@@ -67,6 +67,7 @@
     .header__content {
         flex-direction: column-reverse;
         gap: 5rem;
+        padding-top: 10rem;
     }
     
     .header__content-links ul {
