@@ -7,12 +7,11 @@
 .cards__item {
     background: var(--background-light-green);
     border-radius: 30px;
-    opacity: .8;
-    transition: .3s;
+    filter: saturate(85%);
 }
 
 .cards__item:hover {
-    opacity: initial;
+    filter: initial;
 }
 
 .cards__item-content {
