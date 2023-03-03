@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll('section');
 
+/* inicializar las animaciones */
 AOS.init();
 
 /* navbar pegajoso */
@@ -11,7 +12,7 @@ window.addEventListener('scroll', () => {
         nav.style.cssText = 'opacity: initial';
 });
 
-/* section activos, de acuerdo se va scrolleando */
+/* section activos, según se vaya scrolleando */
 window.addEventListener('scroll', () => {
     const height_total = window.pageYOffset;
     sections.forEach((section) => {

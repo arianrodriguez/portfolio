@@ -13,6 +13,10 @@
     font-family: 'Tw Cen MT', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /* animación de scroll */
+}
+
 body {
     font-family: 'Tw Cen MT Condensed', sans-serif;
     font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
