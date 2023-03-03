@@ -12,7 +12,7 @@ const messages_error = {
     },
     email: {
         valueMissing: '¡El campo email no puede estar vacío!',
-        patternMismatch: 'El email no es válido'
+        patternMismatch: 'Porfavor, ingresa un email válido'
     },
     subject: {
         valueMissing: '¡El campo asunto no puede estar vacío!'
