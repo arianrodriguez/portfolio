@@ -1,6 +1,6 @@
 #projects {
     position: relative;
-    background: var(--background-dark-green);
+    background-color: var(--background-dark-green);
     padding: 8rem 0;
     color: var(--color-text);
     text-align: center;
@@ -13,7 +13,7 @@
 .projects__content .cards__item {
     width: 300px;
     height: auto;
-    background: var(--color-text-dark);
+    background-color: var(--color-text-dark);
 }
 
 .projects__content .cards__item-img {

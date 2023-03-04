@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--background-dark-green);
+    background-color: var(--background-dark-green);
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@
         justify-content: center;
         width: 85%;
         height: 100vh;
-        background: var(--background-light-green);
+        background-color: var(--background-light-green);
         transition: 2.5s;
     }
 
@@ -76,7 +76,7 @@
         justify-content: center;
         width: 85%;
         height: 100vh;
-        background: var(--background-light-green);
+        background-color: var(--background-light-green);
         transition: 1s;
     }
 

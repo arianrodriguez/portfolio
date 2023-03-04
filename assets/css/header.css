@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    background: var(--background-dark-green);
+    background-color: var(--background-dark-green);
     height: calc(100vh - 2rem);
 }
 

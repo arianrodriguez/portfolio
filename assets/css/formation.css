@@ -15,7 +15,7 @@
 }
 
 .formation__content .cards__item {
-    background: var(--color-text-dark);
+    background-color: var(--color-text-dark);
 }
 
 .formation__content .cards__item-content {
