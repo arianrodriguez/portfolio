@@ -295,7 +295,7 @@
             <div class="contact__content">
                 <h2 class="subtitle">Contacto</h2>
                 <div class="contact__content-form">
-                    <form action="">
+                    <form data-form>
                         <fieldset>
                             <div class="form__info">
                                 <legend>¿Tienes algo en mente? ¡Hágamoslo juntos!</legend>
@@ -309,14 +309,14 @@
 
                                         <div class="input__container flex-column">
 
-                                            <input type="text" id="form-name" required placeholder=" " data-type="name"
-                                                autocomplete="off">
+                                            <input type="text" name="nombre" id="form-name" required placeholder=" "
+                                                data-type="name" autocomplete="off" maxlength="50">
                                             <label for="form-name" class="form__label">Nombre *</label>
                                         </div>
 
                                         <div class="input__container flex-column">
 
-                                            <input type="text" id="form-email" required placeholder=" "
+                                            <input type="text" name="email" id="form-email" required placeholder=" "
                                                 data-type="email" autocomplete="off"
                                                 pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
                                             <label for="form-email" class="form__label">Email *</label>
@@ -324,15 +324,15 @@
 
                                         <div class="input__container flex-column">
 
-                                            <input type="text" id="form-subject" required placeholder=" "
-                                                data-type="subject" autocomplete="off">
+                                            <input type="text" name="asunto" id="form-subject" required placeholder=" "
+                                                data-type="subject" autocomplete="off" maxlength="50">
                                             <label for="form-subject" class="form__label">Asunto *</label>
                                         </div>
 
                                         <div class="input__container flex-column">
                                             <textarea id="form-mssg" cols="30" rows="10" required
                                                 placeholder="Escribe aquí un mensaje" data-type="mssg"
-                                                autocomplete="off"></textarea>
+                                                autocomplete="off" name="mensaje" maxlength="550"></textarea>
 
                                         </div>
 
@@ -344,7 +344,6 @@
                                     </div>
 
                                 </div>
-
                             </div>
                         </fieldset>
                     </form>
@@ -389,16 +388,18 @@
         </div>
     </footer>
 
+    <!--EMAIL JS<-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!--LIBRARY ANIMATE ON SCROLL-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--MY SCRYPTS-->
     <script src="/components/animation-buttons.js"></script>
     <script src="/components/menu-toggle.js"></script>
     <script src="/components/animation-projects.js"></script>
-    <script src="/components/validation-form.js"></script>
     <script src="/components/buttons-links.js"></script>
     <script src="/components/progressbar-skills.js"></script>
     <script src="/components/script.js"></script>
+    <script type="module" src="/components/validation-form.js"></script>
 </body>
 
 </html>

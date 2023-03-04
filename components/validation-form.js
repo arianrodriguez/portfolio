@@ -1,10 +1,7 @@
-const inputs = document.querySelectorAll('input');
-const submit = document.getElementById('submit').parentElement;
+import { send_form } from "./conection-emailjs.js";
 
-/*
-    verificar:
-        - pattern de email
-*/
+const inputs = document.querySelectorAll('input');
+const submit = document.querySelector('[data-btn="submit"]');
 
 const messages_error = {
     name: {
@@ -53,24 +50,41 @@ function input_error(error, input) {
 
 }
 
-inputs.forEach((input) => {
-    input.addEventListener('blur', () => {
-        const validity = input.validity;
-        for(let i in validity) {
-            if(i!='valid') {
-                if(validity[i]) 
-                    input_error(messages_error[input.dataset.type][i], input);
-            } else if(validity[i]) { //sí es válido
-                console.log(validity);
+function manage_validity(input) {
+    const validity = input.validity;
+    for(let i in validity) {
+        if(i!='valid') {
+            if(validity[i]) 
+                input_error(messages_error[input.dataset.type][i], input);
+        } else if(validity[i]) { //sí es válido
+            if (input.parentElement.lastElementChild.tagName !== 'LABEL') { // evitando que se elimine el label
                 const div_error = input.parentElement.lastChild;
                 input.parentElement.removeChild(div_error);
-                // regresar al color original
-                input.parentElement.firstElementChild.style.cssText = 'border-bottom: 2px solid var(--background-light-green)';
-            }
+            }  
+            // regresar al color original
+            input.parentElement.firstElementChild.style.cssText = 'border-bottom: 2px solid var(--background-light-green)';
         }
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener('blur', () => {
+        manage_validity(input);
     });
 });
 
 submit.addEventListener('click', (e) => {
     e.preventDefault();
-})
+    let valids = 0;
+    inputs.forEach((input) => {
+        if(input.validity['valid']) valids++;
+    });
+
+    if(valids !== 3) {
+        inputs.forEach((input) => manage_validity(input));
+    }else {
+        const form = document.querySelector('[data-form]');            
+        send_form(form);
+        
+    }  
+});
