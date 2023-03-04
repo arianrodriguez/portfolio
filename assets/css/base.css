@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
 :root {
     --background-dark-green: #3b6978;
@@ -10,7 +10,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 html {
@@ -18,8 +18,8 @@ html {
 }
 
 body {
-    font-family: 'Catamaran', sans-serif;
-    background: var(--background-light-green);
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: var(--background-light-green);
 }
 
 .flex-center {
