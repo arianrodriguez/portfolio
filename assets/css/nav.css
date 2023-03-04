@@ -58,7 +58,7 @@
 
     .navbar__list { /* el navbar se oculta */
         position: fixed;
-        top: -100%;
+        top: -200%;
         left: 0;
         flex-direction: column;
         justify-content: center;

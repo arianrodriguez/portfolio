@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
 :root {
     --background-dark-green: #3b6978;
     --background-light-green: #72AAAE;
@@ -8,7 +10,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Tw Cen MT', sans-serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-    font-family: 'Tw Cen MT', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     background: var(--background-light-green);
 }
 
