@@ -3,10 +3,10 @@ const progressbars = document.querySelectorAll('.fill-progressbar');
 const fill = {
     html: 80,
     css: 60,
-    js: 40,
-    py: 30,
-    cpp: 30,
-    git: 30
+    js: 80,
+    py: 80,
+    cpp: 80,
+    git: 80
 };
 
 progressbars.forEach((pb) => {
