@@ -49,7 +49,7 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 900px) {
     .navbar__content {
         padding: 0;
         align-items: flex-start;

@@ -47,6 +47,7 @@ body {
     border-radius: 1.8rem;
     cursor: pointer;
     transition: .8s;
+    user-select: none;
 }
 
 .button-light {

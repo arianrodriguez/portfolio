@@ -66,7 +66,7 @@
             <div class="header__content-info">
                 <h2 class="subtitle" data-aos="fade-left" data-aos-delay="200">¡Hola! Soy</h2>
                 <h1 class="title" data-aos="fade-right" data-aos-delay="300">Arian Rodriguez</h1>
-                <p>Estudiante de Ingeniería en Software enfocado al Desarrollo Backend. Como persona autodidacta,
+                <p>Estudiante de Ingeniería de Software enfocado al Desarrollo Backend. Como persona autodidacta,
                     busco poder realizar prácticas que sean de ayuda a mi crecimiento profesional</p>
                 <div class="box-buttons flex-center">
                     <div class="button box-shadow" id="button-cv" data-btn="cv">Curriculum</div>
@@ -85,11 +85,11 @@
         <section id="sobreMi">
             <div class="sobreMi__content">
                 <h2 class="subtitle">Sobre mi</h2>
-                <p data-aos="zoom-in">Actualmente estudiante de la carrera de Ingeniería en Software, la cual me
+                <p data-aos="zoom-in">Actualmente estudiante de la carrera de Ingeniería de Software, la cual me
                     encuentro continuamente mejorando mi lógica de programación con C++. Además, mejoro internamente mis
                     habilidades blandas como lo son, el liderazgo, compañerismo y asertividad.
                     En adición a mi educación profesional, soy Alumni del programa asíncrono Oracle Next Education +
-                    Alura LATAM. Tengo conocimiento en el desarrollo Backend, tecnologías como Java, Python y Node.js para la creación de API RESTful e integración con contenedores y la Cloud</p>
+                    Alura LATAM. Tengo conocimiento en el desarrollo Frontend y Backend, aplicando tecnologías como Vue.js, React para UI y UX; Java, Python y Node.js para la creación de API RESTful e integración con contenedores y la Cloud.</p>
             </div>
         </section>
 
@@ -193,7 +193,7 @@
                             <img src="/assets/img/upc-logo.png" alt="UPC">
                             <div class="formation__content-info">
                                 <span>Universidad Peruana de Ciencias Aplicadas</span>
-                                <p>Ingeniería en Software</p>
+                                <p>Ingeniería de Software</p>
                                 <p>Marzo 2022 - Actualidad</p>
                             </div>
                         </div>
@@ -292,6 +292,7 @@
             <div class="contact__content">
                 <h2 class="subtitle">Contacto</h2>
                 <div class="contact__content-form">
+                           
                     <form data-form>
                         <fieldset>
                             <div class="form__info">
@@ -301,6 +302,21 @@
                             <div class="form__input flex-center cards__content">
 
                                 <div class="form__input-content cards__item" data-aos="zoom-in">
+                                    <div id="spinner" class="spinner-container hidden">
+                                        <div class="spinner"></div>
+                                    </div>     
+
+                                    <div class="transaction_success hidden" id="form-success">
+                                        <div class="transaction_success-content flex-column">
+                                            <div class="transaction_success-content-info">
+                                                <i class="fa-solid fa-check"></i>
+                                                
+                                                <p>¡Gracias por tu mensaje!</p>
+                                                <p>Me pondré en contacto contigo lo antes posible</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                     <div class="cards__item-content flex-column">
 
@@ -340,6 +356,8 @@
 
                                     </div>
 
+                                    
+
                                 </div>
                             </div>
                         </fieldset>
@@ -378,15 +396,11 @@
             <div class="footer__content-info flex-center">
                 <div class="flex-column">
                     <p>Copyright &copy; Arian Rodriguez</p>
-                    <p>Design inspired by <a href="https://mariana-am-portafolio.netlify.app/#home"
-                            target="_blank">Mariana Arias</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!--EMAIL JS<-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!--LIBRARY ANIMATE ON SCROLL-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--MY SCRYPTS-->
